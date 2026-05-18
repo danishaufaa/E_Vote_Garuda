@@ -29,7 +29,7 @@ export async function POST(request: Request) {
         gross_amount: 1000, // Harga per 1 vote (Misal Rp 1.000)
       },
       customer_details: { first_name: nama_voter },
-      enabled_payments: ["qris", "gopay"], // Fokuskan ke QRIS
+      // enabled_payments: ["other_qris", "qris"], // Fokuskan ke QRIS
     };
 
     const transaction = await snap.createTransaction(parameter);
